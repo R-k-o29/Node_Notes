@@ -1,0 +1,21 @@
+  
+
+  http.createServer(()=>{
+
+    res.statusCode = 200; // 500- for internal error
+
+    res.setHeader("Content-type","application/json")
+
+    res.write("
+    << HTML Code >>
+    ")
+
+    res.end(" ")// string or binary content only
+
+  });
+
+  server.listen(PORT);
+
+
+
+// req.url == " \"
